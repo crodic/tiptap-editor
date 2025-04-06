@@ -73,7 +73,9 @@ export function RichTextEditorDemo({ className }: { className?: string }) {
             Highlight.configure({
                 multicolor: true,
             }),
-            ImageExtension,
+            ImageExtension.configure({
+                inline: true,
+            }),
             ImagePlaceholder,
             SearchAndReplace,
             Typography,
